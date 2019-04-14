@@ -43,3 +43,12 @@ rem                        Terminate
 rem --------------------------------------------------------
 del tmpVBE.txt
 del tmpChangedVBE.txt
+
+rem --------------------------------------------------------
+rem                color setting in registory
+rem --------------------------------------------------------
+
+reg add HKEY_CURRENT_USER\software\microsoft\vba\7.1\common /v codebackcolors /t reg_sz /d "2 7 1 13 15 2 2 2 11 9 0 0 0 0 0 0" /f
+
+reg add HKEY_CURRENT_USER\software\microsoft\vba\7.1\common /v codeforecolors /t reg_sz /d "13 5 12 1 6 15 8 5 1 1 0 0 0 0 0 0" /f
+
