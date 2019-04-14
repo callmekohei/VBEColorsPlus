@@ -52,6 +52,7 @@ CertUtil: -decodehex コマンドは正常に完了しました。
 タスクマネジャーにてプロセスを確認できるので  
 エクセルのプロセスが生きている場合は落とすこと
 
+<br>
 
 ## 色設定ファイルを変更する
 
@@ -85,7 +86,7 @@ CertUtil: -decodehex コマンドは正常に完了しました。
 
 ## 確認
 
-エクセルを立ち上げて`VBE`を開き上記の写真のようになっていたらオーケー。
+エクセルを立ち上げて`VBE`を開き冒頭の写真のようになっていたらオーケー。
 
 <br>
 <br>
@@ -125,13 +126,16 @@ CertUtil: -decodehex コマンドは正常に完了しました。
 
 ### color config file in registory
 
+open `regiedit`
+
 ```
+// go to following address
 \HKEY_CURRENT_USER\Software\Microsoft\VBA\7.1\Common
 
-// CodeBackColors
+CodeBackColors
 2 7 1 13 15 2 2 2 11 9 0 0 0 0 0 0
 
-// CodeForeColors
+CodeForeColors
 13 5 12 1 6 15 8 5 1 1 0 0 0 0 0 0
 ```
 
