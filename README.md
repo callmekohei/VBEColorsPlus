@@ -54,35 +54,9 @@ CertUtil: -decodehex コマンドは正常に完了しました。
 
 <br>
 
-## 色設定ファイルを変更する
-
-### レジストリエディタを立ち上げる
-
-`Win + R` で  `ファイル名を指定して実行` プログラムを立ち上げ `regedit` を入力しレジストリエディタを立ち上げる
 
 
-### ファイルを２つ追加する
 
-![foo05](./pic/foo05.png)
-
-![foo06](./pic/foo06.png)
-
-アドレスバーに下記アドレスを入力
-
-```
-コンピューター\HKEY_CURRENT_USER\Software\Microsoft\VBA\7.1\Common
-```
-
-適当なところで右クリックし`新規 > 文字列値`で下記２つのファイルを作成する
-値の名前はファイル名
-
-```
-値の名前  : CodeBackColors
-値のデータ: 2 7 1 13 15 2 2 2 11 9 0 0 0 0 0 0
-
-値の名前   : CodeForeColors
-値のデータ : 13 5 12 1 6 15 8 5 1 1 0 0 0 0 0 0
-```
 
 ## 確認
 
@@ -96,7 +70,7 @@ CertUtil: -decodehex コマンドは正常に完了しました。
 ## in English
 
 
-### modify VBE7.DLL
+### modify VBE7.DLL ( with cmd.exe )
 
 ```cmd
 // download VBEColorsPlus
@@ -122,20 +96,3 @@ CertUtil: -decodehex コマンドは正常に完了しました。
 1. open `"C:\Program Files (x86)\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\VBA\VBA7.1\`
 1. rename `VBE7.DLL` to `VBE7.DLL.BAK`
 2. drag and drop modified `VBE7.DLL`
-
-
-### color config file in registory
-
-open `regiedit`
-
-```
-// go to following address
-\HKEY_CURRENT_USER\Software\Microsoft\VBA\7.1\Common
-
-CodeBackColors
-2 7 1 13 15 2 2 2 11 9 0 0 0 0 0 0
-
-CodeForeColors
-13 5 12 1 6 15 8 5 1 1 0 0 0 0 0 0
-```
-
