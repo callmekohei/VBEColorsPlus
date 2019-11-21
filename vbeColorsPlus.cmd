@@ -1,6 +1,8 @@
 @echo off
 setlocal
 
+pushd %~dp0
+
 rem ===========================================================================
 rem  FILE    : VBEColorsPlus.cmd
 rem  AUTHOR  : callmekohei <callmekohei at gmail.com>
